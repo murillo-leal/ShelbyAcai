@@ -1,0 +1,11 @@
+.order{
+    flex: 1 1 auto;
+    max-width: 30%;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.logo{
+    width: 70px;
+    margin-right: 10px;
+}

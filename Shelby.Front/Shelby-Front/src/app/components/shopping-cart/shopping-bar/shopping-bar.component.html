@@ -1,0 +1,32 @@
+<mat-expansion-panel hideToggle class="acai-bar">
+    <mat-expansion-panel-header>
+      <mat-panel-title
+        *ngIf="!isAdditional">
+        Escolha o tamanho do seu Açaí!
+      </mat-panel-title>
+      <mat-panel-title
+        *ngIf="isAdditional">
+        Escolha seus adicionais!
+      </mat-panel-title>    
+    </mat-expansion-panel-header>
+
+    <label 
+      id="example-radio-group-label"
+      *ngIf="!isAdditional"></label>
+      
+    <mat-radio-group
+      *ngIf="!isAdditional"
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group">
+    <mat-radio-button class="example-radio-button" *ngFor="let size of sizes" [value]="size">
+      {{ size }}    
+    </mat-radio-button>
+    </mat-radio-group>
+    <label 
+    id="example-radio-group-label"
+    *ngIf="isAdditional">Escolhas seus toppings</label>
+    <app-additional-bar
+    *ngIf="isAdditional">
+
+    </app-additional-bar>
+  </mat-expansion-panel>
