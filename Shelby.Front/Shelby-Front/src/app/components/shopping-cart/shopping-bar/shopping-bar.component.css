@@ -11,3 +11,17 @@
   .example-radio-button {
     margin: 5px;
   }
+
+  .topping-title{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+
+  .toppings-one{
+    margin-right: 150px;
+  }
+
+  .toppings-two{
+    margin-right: 150px;
+  }

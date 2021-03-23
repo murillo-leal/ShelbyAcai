@@ -16,6 +16,7 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShoppingBarComponent } from './components/shopping-cart/shopping-bar/shopping-bar.component';
 import { AdditionalBarComponent } from './components/shopping-cart/additional-bar/additional-bar.component';
+import { CheckOutBarComponent } from './components/shared/footer/check-out-bar/check-out-bar.component';
 
 const material = [
   MatExpansionModule,
@@ -33,7 +34,8 @@ const material = [
     NavComponent,
     ShoppingCartComponent,
     ShoppingBarComponent,
-    AdditionalBarComponent
+    AdditionalBarComponent,
+    CheckOutBarComponent
   ],
   imports: [[material],
     BrowserModule,

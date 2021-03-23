@@ -22,9 +22,16 @@
       {{ size }}    
     </mat-radio-button>
     </mat-radio-group>
+    <div class="toppings-title"><label 
+    class="toppings-one"
+    *ngIf="isAdditional">Adicionais R$1,00(3 são cortesia)</label>    
     <label 
-    id="example-radio-group-label"
-    *ngIf="isAdditional">Escolhas seus toppings</label>
+    class="toppings-two"
+    *ngIf="isAdditional">Adicionais R$2,00</label>        
+    <label 
+    class="toppings-three"
+    *ngIf="isAdditional">Adicionais R$3,00</label>
+    </div>
     <app-additional-bar
     *ngIf="isAdditional">
 
